@@ -1,0 +1,25 @@
+server:
+  port: 9090
+
+security:
+  oauth2:
+    client:
+      client-id: funResource
+      client-secret: secretResource
+    resource:
+#      id: super-resource
+      token-info-uri: http://localhost:8080/uaa/check_token
+      jwt:
+        key-uri: http://localhost:8080/uaa/token_key
+#      jwk:
+#        key-set-uri: http://localhost:8080/uaa/oauth/key_set
+
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: DEBUG
+

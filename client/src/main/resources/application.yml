@@ -1,0 +1,14 @@
+server:
+  port: 9091
+
+security:
+  oauth2:
+    client:
+      client-id: funClient
+      client-secret: funSecret
+      accessTokenUri: http://localhost:8080/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8080/uaa/oauth/authorize
+      clientAuthenticationScheme: header
+    resource:
+        userInfoUri: http://localhost:8080/uaa/userInfo
+#      tokenInfoUri: http://localhost:8080/uaa/check_token
