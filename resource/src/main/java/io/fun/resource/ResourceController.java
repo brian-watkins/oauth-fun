@@ -15,7 +15,7 @@ public class ResourceController {
     public Map<String, Object> getFun(OAuth2Authentication auth, Principal principal) {
         HashMap<String, Object> map = new HashMap<>();
         map.put("token", auth.getDetails());
-        map.put("principal", principal.toString());
+        map.put("principal", principal.getName());
 
         return map;
     }
