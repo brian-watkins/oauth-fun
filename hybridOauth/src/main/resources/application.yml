@@ -1,0 +1,16 @@
+security:
+  oauth2:
+    client:
+      client-id: 0oaf2vx9l6rCJivwV0h7
+      client-secret: 3GNmBkKCagPk0cb7IDaAUWra1fo5r2XLc6MX5BE7
+      accessTokenUri: https://dev-601225.oktapreview.com/oauth2/default/v1/token
+      userAuthorizationUri: https://dev-601225.oktapreview.com/oauth2/default/v1/authorize
+      clientAuthenticationScheme: header
+      scope: openid profile email
+    resource:
+      userInfoUri: https://dev-601225.oktapreview.com/oauth2/default/.well-known/oauth-authorization-server
+      tokenInfoUri: https://dev-601225.oktapreview.com/oauth2/default/v1/introspect
+
+logging:
+  level:
+    org.springframework.security: DEBUG
